@@ -1,0 +1,191 @@
+html {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.header a:hover {
+    border: 2px black solid;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.top ol {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    padding: 2px 0px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+}
+
+.top a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.top a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    margin: auto;
+    width: 75%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    padding-bottom: 10px;
+    border: 2px solid #000;
+
+}
+
+.sub-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.sub-hero p {
+    margin: 0px;
+}
+
+.sub-hero a {
+    border: 1px black solid;
+    padding: 3px;
+    color: black;
+    text-decoration: none;
+}
+
+.sub-hero a:hover {
+    border: 2px black solid;
+}
+
+.hero {
+    height: 250px;
+    width: 100%;
+}
+
+.paragraphs h2 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.paragraphs p {
+    font-size: 18px;
+    margin: 0px;
+    text-align: center;
+}
+
+.more-info {
+    margin-top: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.more-info > h2 {
+    flex-basis: 100%;
+    margin: 5px 0px 0px 10px;
+    font-size: 16px;
+
+}
+
+.list {
+    font-size: 16px;
+}
+
+.list > h2 {
+    margin: 0px 0px 0px 30px;
+    font-size: 16px;
+}
+
+.list ul {
+    margin-top: 0px;
+    margin-left: 5px;
+    padding-left: 0px;
+    list-style-type:none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.aa_logo {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px black solid;
+    padding: 5px;
+    margin-left: 10px;
+    color: red;
+}
+
+.aa_logo_img {
+    display: flex;
+    align-items: center;
+}
+
+.aa_logo_img a {
+    display: flex;
+    align-items: center;
+}
+
+.aa_logo_text * {
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.bottom {
+    width: 45%;
+    margin-right: 10px;
+    align-items: flex-end;
+}
+
+.bottom ol {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bottom ol li {
+    align-items: flex-end;
+}
+
+.bottom ol li a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
