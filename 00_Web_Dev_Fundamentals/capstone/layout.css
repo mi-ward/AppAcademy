@@ -1,0 +1,93 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navigation {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 35px;
+}
+
+.navigation ol {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.main {
+    margin: auto;
+    text-align: center;
+    width: 75%;
+}
+
+.hero {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.faq {
+    border-top: 2px solid black;
+    margin: auto;
+    width: 50%;
+}
+
+.faq h2 {
+    margin-bottom: 0px;
+}
+
+.faq p {
+    margin-top: 0px;
+}
+
+.comment-box {
+    width: 35%;
+    margin: auto;
+    text-align: left;
+}
+
+.comment-box p {
+    text-align: center;
+    font-weight: 600;
+}
+
+fieldset {
+    border-radius: 1%;
+}
+
+.textform {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.textform input {
+    display: block;
+}
+
+.checkbox input {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+textarea {
+    display: block;
+    height: 100px;
+    width: 99%;
+}
+
+button {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
