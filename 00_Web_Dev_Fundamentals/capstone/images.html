@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>MW.com</title>
-        <link rel="stylesheet" type="text/css" href="layout.css">
-    </head>
-    <body>
-        <div class="navigation">
-            <nav>
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="external.html">Links</a></li>
-                    <li><a href="images.html">Images</a></li>
-                    <li><a href="form.html">Form</a></li>
-                </ol>
-            </nav>
-        </div>
 
-        <div class="main">
+<head>
+    <title>MW.com</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <span> | </span>
+                <li><a href="external.html">My Stuff</a></li>
+                <span> | </span>
+                <li class="current-page"><a href="images.html">Pixel Art</a></li>
+                <span> | </span>
+                <li><a href="form.html">Contact</a></li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="main">
         <div>
             <h1>Images</h1>
         </div>
 
-        <div>
-            <label> <a> <img /> </a> </label>
-            <label> <a> <img /> </a> </label>
-            <label> <a> <img /> </a> </label>
-            <label> <a> <img /> </a> </label>
-            <label> <a> <img /> </a> </label>
-            <label> <a> <img /> </a> </label>
-        </div>
-    </div>
-    </body>
+        <div class="images">
+
+            <div class="tile-row">
+                <div class="tile">
+                    <a href="assets/portrait.png"><img src="assets/portrait.png"></a>
+                    <label>Me</label>
+                </div>
+
+                <div class="tile">
+                    <a href="assets/ari.png"><img src="assets/ari.png"> </a>
+                    <label>Ari</label>
+                </div>
+
+                <div class="tile">
+                    <a href="assets/brutus.png"><img src="assets/brutus.png"></a>
+                    <label>Brutus</label>
+                </div>
+            </div>
+
+            <div class="tile-row">
+                <div class="tile">
+                    <a href="assets/apple.gif"><img src="assets/apple.gif"> </a>
+                    <label>Apple</label>
+                </div>
+
+                <div class="tile">
+                    <a href="assets/orange.png"><img src="assets/orange.png"> </a>
+                    <label>Orange</label>
+                </div>
+
+                <div class="tile">
+                    <a href="assets/coffee.gif"><img src="assets/coffee.gif" /></a>
+                    <label>Coffee</label>
+                </div>
+            </div>
+</body>
 
 </html>
