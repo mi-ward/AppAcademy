@@ -5,4 +5,7 @@
 # Dependency directories
 node_modules/
 
+#VSCode
+.vscode
+
 flashcards/
