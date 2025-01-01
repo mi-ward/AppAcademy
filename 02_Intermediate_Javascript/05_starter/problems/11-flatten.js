@@ -1,3 +1,4 @@
+debugger
 /***********************************************************************
 Write a recursive function called `flatten` that takes a single array with
 any number of nested arrays and returns and array with all the nested
@@ -11,7 +12,38 @@ flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
 
 // your code here
-  
+let flatten = (arr) => {
+//  let firstArr = arr[0];
+//  let restArr = arr.slice(1);
+
+//   if (arr.length === 0) {
+//     return [];
+//   }
+//   else if (!Array.isArray(firstArr)) {
+//     return [firstArr].concat(flatten(restArr))
+//   }
+//   else {
+//     return flatten(firstArr).concat(flatten(restArr));
+//   }
+// }
+
+
+  let newArr = []
+
+  arr.forEach( (i) => {
+    if (Array.isArray(i)) {
+      newArr = newArr.concat(flatten(i));
+    }
+    else {
+      newArr.push(i);
+    }
+  });
+  return newArr;
+
+}
+
+flatten([1, [2, [3]]]); // [1, 2, 3]
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = flatten;

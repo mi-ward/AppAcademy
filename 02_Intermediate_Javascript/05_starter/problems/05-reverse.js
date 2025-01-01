@@ -13,7 +13,14 @@ reverse(""); // ""
 ***********************************************************************/
 
 // your code here
-
+let reverse = (string) => {
+  if ((string) === "") {
+    return ""
+  }
+  else {
+    return reverse(string.slice(1)) + string[0];
+  }
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = reverse;

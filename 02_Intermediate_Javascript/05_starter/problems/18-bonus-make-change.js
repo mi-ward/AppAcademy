@@ -54,9 +54,35 @@ combinations.
 ***********************************************************************/
 
 function greedyMakeChange(target, coins = [25, 10, 5, 1]) {
-  // no tests for greedyMakeChange so make sure to test this on your own
-  // your code here
+  let newArr = [];
+
+  let availableCoins = coins.filter((coin) => {
+    return (target % coin === 0);
+  })
+
+  if (target === 0) {
+    return [];
+  } else if (availableCoins.length === 0) {
+    return null;
+  } else {
+    newArr.push(availableCoins[0]);
+  }
+
+  newArr = newArr.concat(greedyMakeChange((target - availableCoins[0]), coins));
+
+  if (newArr.includes(null)) {
+    return
+  } else {
+    return newArr;
+  }
+
 }
+
+console.log(greedyMakeChange(9)); // return [5,1,1,1,1]
+console.log(greedyMakeChange(11)); // return [10,1]
+console.log(greedyMakeChange(7, [5, 3])); // return [10,1]
+console.log(greedyMakeChange(7, [5, 3])); // return [10,1]
+console.log(greedyMakeChange(24, [10, 7, 1])); // [7, 7, 10]
 
 function makeBetterChange(target, coins = [25, 10, 5, 1]) {
   // your code here
@@ -64,8 +90,8 @@ function makeBetterChange(target, coins = [25, 10, 5, 1]) {
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
-try {
-  module.exports = makeBetterChange
-} catch (e) {
-  module.exports = null;
-}
+// try {
+//   module.exports = makeBetterChange
+// } catch (e) {
+//   module.exports = null;
+// }

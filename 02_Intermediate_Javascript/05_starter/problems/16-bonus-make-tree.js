@@ -64,8 +64,31 @@ The call above should return the tree below:
 ***********************************************************************/
 
 const makeTree = (categories, parent) => {
-  // your code here
+  let obj = {};
+
+  // 1. look through categories for parent
+  let parentPresent = (arr, p) => {
+    return arr.filter((o) => {
+      if (o['parent'] === p) {
+        return true;
+      }
+    });
+  }
+
+  let parents = parentPresent(categories, parent)
+  // 2. if no parent is found, return {}
+  if (parents.length === 0) {
+    return obj;
+  }
+
+  // 3. if a parent is found, add to the object and remove from the list
+  parents.forEach((p) => {
+    obj[p['id']] = makeTree(categories, p['id'])
+  });
+  console.log(obj)
+  return obj;
 };
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

@@ -13,6 +13,18 @@ addToTwelve([1]); // false
 ***********************************************************************/
 
 // your code here
+let addToTwelve = (arr) => {
+  if (arr[0] + arr[1] === 12) {
+    return true;
+  }
+  else if (arr[2] === undefined) {
+    return false;
+    }
+  else {
+    return addToTwelve(arr.slice(1));
+  }
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

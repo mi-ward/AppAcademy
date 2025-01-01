@@ -20,11 +20,21 @@ fibonacci(10); // 55
 ***********************************************************************/
 
 // your code here
-  
+
+let fibonacci = (num) => {
+  if (num === 1) {
+    return 1;
+  }
+  else if (num === 2) {
+    return 1;
+  }
+  else {
+    return fibonacci(num - 1) + fibonacci(num - 2);
+  }
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = fibonacci;
 } catch (e) {
   module.exports = null;
 }
-  

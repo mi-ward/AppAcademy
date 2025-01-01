@@ -11,7 +11,16 @@ sumArray([1, 2, 3, 4, 5]); // 15
 ***********************************************************************/
 
 // your code here
-  
+  function sumArray(arr) {
+    if (arr.length === 0) {
+      return 0;
+    }
+    else {
+      return arr.pop() + sumArray(arr);
+    }
+  }
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sumArray;

@@ -13,7 +13,26 @@ permutations([1, 2, 3]) // [[1, 2, 3], [1, 3, 2],
 ***********************************************************************/
 
 // your code here
+function permutations(array) {
+  // base case = [[n]]
+  if (array.length === 1) {
+    return [array];
+  } else {
+    let newArr = [];
 
+    for (let i = 0; i < array.length; i++) {
+      let current = array.slice(i,i+1);
+      let others  = array.slice(0,i).concat(array.slice(i+1));
+      others = permutations(others)
+
+      for (let j = 0; j < others.length; j++) {
+        newArr.push(current.concat(others[j]));
+      }
+    }
+    return newArr;
+  }
+
+};
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = permutations;
